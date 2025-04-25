@@ -4,7 +4,6 @@ const { addBook, getAllBooks, getBook, updateBook, deleteBook, buyBook, buyMulti
 const auth = require('../middlewares/auth');
 const adminAuth = require('../middlewares/adminAuth');
 
-
 router.post('/add', adminAuth, addBook);
 router.post('/buy/:id', auth, buyBook);
 router.post('/buy-multiple', auth, buyMultipleBooks);
