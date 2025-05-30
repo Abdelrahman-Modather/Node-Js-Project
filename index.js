@@ -1,5 +1,6 @@
 const connectDB = require('./config/db');
 const express = require('express');
+const dotenv = require('dotenv').config();
 const userRoutes = require('./routes/userRoutes');
 const bookRoutes = require('./routes/bookRoutes');
 const app = express();
